@@ -1,6 +1,6 @@
 {
   "name": "@softwareasaservice/queue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Maintain a queue for your React/Next App on the cloud or self-host, from @importsaas",
   "main": "index.js",
   "directories": {
