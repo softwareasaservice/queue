@@ -2,11 +2,24 @@
   "name": "@softwareasaservice/queue",
   "version": "0.1.1",
   "description": "Maintain a queue for your React/Next App on the cloud or self-host, from @importsaas",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "exports": {
+      ".": {
+          "import": "./dist/mjs/index.js",
+          "require": "./dist/cjs/index.js"
+      }
+  },
+  "devDependencies": {
+      "@types/node": "^20.3.3",
+      "eslint": "^8.44.0",
+      "jest": "^29.5.0",
+      "typescript": "^5.1.6"
   },
   "scripts": {
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && bash ./fixup",
+    "lint": "eslint src",
+    "lint-fix": "eslint src --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
