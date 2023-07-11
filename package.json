@@ -1,0 +1,31 @@
+{
+  "name": "@softwareasaservice/queue",
+  "version": "0.1.0",
+  "description": "Maintain a queue for your React/Next App on the cloud or self-host, from @importsaas",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softwareasaservice/queue.git"
+  },
+  "author": "importSaaS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/softwareasaservice/queue/issues"
+  },
+  "homepage": "https://github.com/softwareasaservice/queue#readme",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "queue",
+    "saas",
+    "importsaas"
+  ]
+}
